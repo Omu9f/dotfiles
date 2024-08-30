@@ -1,0 +1,162 @@
+* {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+window#waybar {
+    background-color: rgba(13, 14, 15, 0.9);
+    color: #c4c4c4;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+button {
+    border: none;
+    border-radius: 0;
+}
+
+button:hover {
+    background: inherit;
+}
+
+#workspaces button {
+    padding: 0 7px;
+    margin: 2px 0;
+    background-color: transparent;
+    color: #c4c4c4;
+    border-radius: 15px;
+}
+
+#workspaces button:hover {
+    background: #475054;
+}
+
+#workspaces button.active {
+    background-color: #6c9fff;
+    color: #1c1c1c;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#window,
+/* #custom-power, */
+#bluetooth {
+    padding: 5px 15px;
+    color: #e1e1e1;
+    background-color: rgba(35, 35, 35, 0.7);
+}
+
+#workspaces {
+    margin: 5px 5px 5px 5px;
+}
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#window {
+    border-radius: 20px 20px 20px 20px;
+    margin: 5px 0px 5px 0px;
+    background-color: rgba(39, 42, 52, 0);
+}
+
+/* #custom-power {
+    color: #ff0046;
+    border-radius: 20px;
+    transition: all 250ms ease-in-out;
+} */
+
+#battery.charging {
+    color: #00ff1c;
+}
+
+#clock {
+    border-radius: 20px;
+    margin: 5px 5px 5px 5px;
+    /* background-color: rgba(39, 42, 52, 0); */
+}
+
+#battery {
+    border-radius: 0 20px 20px 0;
+    margin: 5px 0px 5px 0px;
+    /* background-color: rgba(39, 42, 52, 0); */
+}
+
+#pulseaudio {
+    border-radius: 0 0 0 0;
+    margin: 5px 0px 5px 0px;
+    /* background-color: rgba(39, 42, 52, 0); */
+}
+
+#pulseaudio.muted {
+    color: orange;
+}
+
+#network {
+    /* background-color: rgba(39, 42, 52, 0); */
+    margin: 5px 0px 5px 0px;
+    color: #4572ff;
+}
+
+#network.disconnected {
+    color: red;
+}
+
+#backlight {
+    /* background-color: rgba(39, 42, 52, 0); */
+    margin: 5px 0px 5px 0px;
+}
+
+#tray {
+    border-radius: 20px;
+    margin: 0 5px;
+}
+
+#cpu {
+    border-radius: 20px 0 0 20px;
+    margin: 5px 0px 5px 5px;
+    /* background-color: rgba(39, 42, 52, 0); */
+}
+
+#memory {
+    border-radius: 0 0 0 0;
+    margin: 5px 0px 5px 0px;
+    /* background-color: rgba(39, 42, 52, 0); */
+}
+
+#temperature {
+    border-radius: 0 20px 20px 0;
+    margin: 5px 0px 5px 0px;
+    /* background-color: rgba(39, 42, 52, 0); */
+}
+
+#custom-logo {
+    color: #1794d1;
+    margin: 0 5px;
+    padding: 0 15px;
+    border-radius: 20px;
+}
+
+#bluetooth {
+    border-radius: 20px 0 0 20px;
+    margin: 5px 0px 5px 5px;
+    color: #4572ff;
+    /* background-color: rgba(39, 42, 52, 0); */
+}
