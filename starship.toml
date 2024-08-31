@@ -13,7 +13,7 @@ add_newline = false
 # $character
 # """
 format = """
-$username$hostname$directory
+$username$hostname$directory $git_branch
 $character
 """
 
@@ -31,7 +31,7 @@ style = "bg: green"
 symbol = "󰘬"
 # truncation_length = 4
 truncation_symbol = ""
-format = "[](bold fg:#83b4ff)[$symbol $branch(:$remote_branch)](fg:black bg:#83b4ff)[ ](bold fg:#83b4ff)"
+format = "[█](bold fg:#83b4ff)[$symbol $branch(:$remote_branch)](fg:black bg:#83b4ff)[█ ](bold fg:#83b4ff)"
 
 [git_commit]
 commit_hash_length = 4
@@ -55,7 +55,7 @@ deleted = " 🗑 "
 
 [hostname]
 ssh_only = false
-format = "[$hostname](bg:#b2e6f7 bold fg:black)[🭊🭁](bg:#b2e6f7 fg:#a1ddff)"
+format = "[$hostname](bg:#a9c2ff bold fg:black)[🭊🭁](bg:#a9c2ff fg:#a1ddff)"
 trim_at = ".companyname.com"
 disabled = false
 
@@ -76,12 +76,12 @@ time_format = "%T"
 [username]
 style_user = "bold bg:#6893ff fg:black"
 style_root = "red bold"
-format = "[ 🭅](bold fg:#6893ff)[$user]($style)[🭊🭁](bg:#6893ff fg:#b2e6f7)"
+format = "[ 🭅](bold fg:#6893ff)[$user]($style)[🭊🭁](bg:#6893ff fg:#a9c2ff)"
 disabled = false
 show_always = true
 
 [directory]
-home_symbol = "  "
+home_symbol = "~"
 read_only = "  "
 style = "bg:#a1ddff fg:black"
 truncation_length = 6
