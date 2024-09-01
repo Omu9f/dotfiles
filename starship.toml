@@ -31,7 +31,7 @@ style = "bg: green"
 symbol = "󰘬"
 # truncation_length = 4
 truncation_symbol = ""
-format = "[█](bold fg:#83b4ff)[$symbol $branch(:$remote_branch)](fg:black bg:#83b4ff)[█ ](bold fg:#83b4ff)"
+format = "[█](bold fg:#83b4ff)[$symbol $branch(:$remote_branch)](bold fg:black bg:#83b4ff)[█ ](bold fg:#83b4ff)"
 
 [git_commit]
 commit_hash_length = 4
@@ -84,8 +84,8 @@ show_always = true
 home_symbol = "~"
 read_only = "  "
 style = "bg:#a1ddff fg:black"
-truncation_length = 6
-truncation_symbol = ""
+truncation_length = 1
+truncation_symbol = ".."
 format = '[$path](bold $style)[🭟](bold fg:#a1ddff)'
 
 
