@@ -1,0 +1,204 @@
+# built on top of end-4's theme
+# added some useless colored blocks in the terminal
+
+# Don't print a new line at the start of the prompt
+add_newline = false
+# Pipes ╰─ ╭─
+# Powerline symbols                                    
+# Wedges 🭧🭒 🭣🭧🭓 🭂 🭃 🭄 🭈 🭉 🭎 🭊🭁 🭟
+# Random noise 🬖🬥🬔🬗
+
+# format = """
+# $cmd_duration$username$hostname $directory $git_branch
+# $character
+# """
+format = """
+$username$hostname$directory $git_branch
+$character
+"""
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character] # The name of the module we are configuring is "character"
+success_symbol = "[ 🭧🭓█](bold fg:#6893ff)[➜](bold fg:black bg:#6893ff)[█](bold fg:#6893ff)"
+error_symbol = "[󰅙](bold fg:red) "
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[git_branch]
+style = "bg: green"
+symbol = "󰘬"
+# truncation_length = 4
+truncation_symbol = ""
+format = "[█](bold fg:#83b4ff)[$symbol $branch(:$remote_branch)](bold fg:black bg:#83b4ff)[█ ](bold fg:#83b4ff)"
+
+[git_commit]
+commit_hash_length = 4
+tag_symbol = " "
+
+[git_state]
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
+cherry_pick = "[🍒 PICKING](bold red)"
+
+[git_status]
+conflicted = " 🏳 "
+ahead = " 🏎💨 "
+behind = " 😰 "
+diverged = " 😵 "
+untracked = " 🤷 ‍"
+stashed = " 📦 "
+modified = " 📝 "
+staged = '[++\($count\)](green)'
+renamed = " ✍️ "
+deleted = " 🗑 "
+
+[hostname]
+ssh_only = false
+format = "[$hostname](bg:#a9c2ff bold fg:black)[🭊🭁](bg:#a9c2ff fg:#a1ddff)"
+trim_at = ".companyname.com"
+disabled = false
+
+[line_break]
+disabled = false
+
+[memory_usage]
+disabled = true
+threshold = -1
+symbol = " "
+style = "bold dimmed green"
+
+[time]
+disabled = true
+format = '🕙[\[ $time \]]($style) '
+time_format = "%T"
+
+[username]
+style_user = "bold bg:#6893ff fg:black"
+style_root = "red bold"
+format = "[ 🭅](bold fg:#6893ff)[$user]($style)[🭊🭁](bg:#6893ff fg:#a9c2ff)"
+disabled = false
+show_always = true
+
+[directory]
+home_symbol = "~"
+read_only = "  "
+style = "bg:#a1ddff fg:black"
+truncation_length = 1
+truncation_symbol = ".."
+format = '[$path](bold $style)[🭟](bold fg:#a1ddff)'
+
+
+[directory.substitutions]
+"Desktop" = "  "
+"Documents" = "  "
+"Downloads" = "  "
+"Music" = " 󰎈 "
+"Pictures" = "  "
+"Videos" = "  "
+
+[cmd_duration]
+min_time = 0
+format = '[](bold fg:yellow)[ $duration](bold bg:yellow fg:black)[](bold fg:yellow) •• '
+# built on top of end-4's theme
+# added some useless colored blocks in the terminal
+
+# Don't print a new line at the start of the prompt
+add_newline = false
+# Pipes ╰─ ╭─
+# Powerline symbols                                    
+# Wedges 🭧🭒 🭣🭧🭓 🭂 🭃 🭄 🭈 🭉 🭎 🭊🭁 🭟
+# Random noise 🬖🬥🬔🬗
+
+# format = """
+# $cmd_duration$username$hostname $directory $git_branch
+# $character
+# """
+format = """
+$username$hostname$directory $git_branch
+$character
+"""
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character] # The name of the module we are configuring is "character"
+success_symbol = "[ 🭧🭓█](bold fg:#6893ff)[➜](bold fg:black bg:#6893ff)[█](bold fg:#6893ff)"
+error_symbol = "[󰅙](bold fg:red) "
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[git_branch]
+style = "bg: green"
+symbol = "󰘬"
+# truncation_length = 4
+truncation_symbol = ""
+format = "[█](bold fg:#83b4ff)[$symbol $branch(:$remote_branch)](bold fg:black bg:#83b4ff)[█ ](bold fg:#83b4ff)"
+
+[git_commit]
+commit_hash_length = 4
+tag_symbol = " "
+
+[git_state]
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
+cherry_pick = "[🍒 PICKING](bold red)"
+
+[git_status]
+conflicted = " 🏳 "
+ahead = " 🏎💨 "
+behind = " 😰 "
+diverged = " 😵 "
+untracked = " 🤷 ‍"
+stashed = " 📦 "
+modified = " 📝 "
+staged = '[++\($count\)](green)'
+renamed = " ✍️ "
+deleted = " 🗑 "
+
+[hostname]
+ssh_only = false
+format = "[$hostname](bg:#a9c2ff bold fg:black)[🭊🭁](bg:#a9c2ff fg:#a1ddff)"
+trim_at = ".companyname.com"
+disabled = false
+
+[line_break]
+disabled = false
+
+[memory_usage]
+disabled = true
+threshold = -1
+symbol = " "
+style = "bold dimmed green"
+
+[time]
+disabled = true
+format = '🕙[\[ $time \]]($style) '
+time_format = "%T"
+
+[username]
+style_user = "bold bg:#6893ff fg:black"
+style_root = "red bold"
+format = "[ 🭅](bold fg:#6893ff)[$user]($style)[🭊🭁](bg:#6893ff fg:#a9c2ff)"
+disabled = false
+show_always = true
+
+[directory]
+home_symbol = "~"
+read_only = "  "
+style = "bg:#a1ddff fg:black"
+truncation_length = 1
+truncation_symbol = ".."
+format = '[$path](bold $style)[🭟](bold fg:#a1ddff)'
+
+
+[directory.substitutions]
+"Desktop" = "  "
+"Documents" = "  "
+"Downloads" = "  "
+"Music" = " 󰎈 "
+"Pictures" = "  "
+"Videos" = "  "
+
+[cmd_duration]
+min_time = 0
+format = '[](bold fg:yellow)[ $duration](bold bg:yellow fg:black)[](bold fg:yellow) •• '
