@@ -22,7 +22,6 @@ button:hover {
 
 #workspaces button {
     padding: 0 5px;
-    /* margin: 2px 0; */
     margin: 5px 0px 5px 0px;
     background-color: transparent;
     color: #c4c4c4;
@@ -61,7 +60,7 @@ button:hover {
 }
 
 #workspaces {
-    margin: 5px 5px 5px 5px;
+    margin: 0px 5px 0px 5px;
 }
 
 .modules-left > widget:first-child > #workspaces {
@@ -74,7 +73,7 @@ button:hover {
 
 #window {
     border-radius: 20px 20px 20px 20px;
-    margin: 5px 0px 5px 0px;
+    margin: 0px 0px 0px 0px;
     background-color: rgba(39, 42, 52, 0);
 }
 
@@ -90,19 +89,19 @@ button:hover {
 
 #clock {
     border-radius: 20px;
-    margin: 5px 5px 5px 5px;
+    margin: 0px 5px 0px 5px;
     /* background-color: rgba(39, 42, 52, 0); */
 }
 
 #battery {
     border-radius: 0 20px 20px 0;
-    margin: 5px 0px 5px 0px;
+    margin: 0px 0px 0px 0px;
     /* background-color: rgba(39, 42, 52, 0); */
 }
 
 #pulseaudio {
     border-radius: 0 0 0 0;
-    margin: 5px -15px 5px 0px;
+    margin: 0px -15px 0px 0px;
     /* background-color: rgba(39, 42, 52, 0); */
 }
 
@@ -112,7 +111,7 @@ button:hover {
 
 #network {
     /* background-color: rgba(39, 42, 52, 0); */
-    margin: 5px 0px 5px 0px;
+    margin: 0px 0px 0px 0px;
     /* color: #3e42ff; */
 }
 
@@ -131,22 +130,21 @@ button:hover {
 }
 
 #cpu {
-    border-radius: 20px 0 0 20px;
-    margin: 5px 0px 5px 5px;
+    /* border-radius: 20px 0 0 20px; */
+    margin: 0px 0px 0px 5px;
     /* background-color: rgba(39, 42, 52, 0); */
 }
 
 #memory {
-    /* border-radius: 0 0 0 0; */
     /* margin: 5px 0px 5px 0px; */
-    border-radius: 0 20px 20px 0;
-    margin: 5px 0px 5px 0px;
+    /* border-radius: 0 20px 20px 0; */
+    margin: 0px 0px 0px 0px;
     /* background-color: rgba(39, 42, 52, 0); */
 }
 
 #temperature {
-    border-radius: 0 20px 20px 0;
-    margin: 5px 0px 5px 0px;
+    /* border-radius: 0 20px 20px 0; */
+    margin: 0px 0px 0px 0px;
     /* background-color: rgba(39, 42, 52, 0); */
 }
 
@@ -158,7 +156,7 @@ button:hover {
 }
 
 #bluetooth {
-    border-radius: 20px 0 0 20px;
+    /* border-radius: 20px 0 0 20px; */
     margin: 5px -5px 5px 5px;
     color: #4572ff;
     /* background-color: rgba(39, 42, 52, 0); */

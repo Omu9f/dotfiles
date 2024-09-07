@@ -1,7 +1,7 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 44,
+  "height": 34,
   "spacing": 0,
   "modules-left": ["cpu", "memory", "hyprland/workspaces"],
   "modules-center": ["clock"],
@@ -75,7 +75,7 @@
   },
   "pulseaudio": {
     "format": "<span font='14'>{icon}</span>",
-    "format-alt": "<span font='14'>{icon}</span> {volume}%",
+    "format-alt": "<span font='14'>{icon}</span> {volume}%  ",
     "format-muted": "<span font='14'>󰝟</span>",
     "format-source": "{volume}% ",
     "format-source-muted": "",
@@ -93,6 +93,6 @@
     "format": "<span font='12'></span>",
     "format-disabled": "<span font='12'>󰂲</span>",
     "format-connected": "<span font='12'>󰂱</span>",
-    "on-click": "blueberry",
+    // "on-click": "blueberry",
   },
 }
