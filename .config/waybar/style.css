@@ -24,17 +24,17 @@ button:hover {
     padding: 0 5px;
     margin: 5px 0px 5px 0px;
     background-color: transparent;
-    color: #c4c4c4;
+    color: #696969;
     border-radius: 20px;
 }
 
 #workspaces button:hover {
-    background: #475054;
+    background: transparent;
 }
 
 #workspaces button.active {
-    background-color: #6c9fff;
-    color: #1c1c1c;
+    /* background-color: #6c9fff; */
+    color: #e1e1e1;
 }
 
 #workspaces button.urgent {
@@ -158,6 +158,14 @@ button:hover {
 #bluetooth {
     /* border-radius: 20px 0 0 20px; */
     margin: 5px -5px 5px 5px;
-    color: #4572ff;
+    /* color: #4572ff; */
+    color: transparent;
+    /* background-color: rgba(39, 42, 52, 0); */
+}
+
+#bluetooth.connected {
+    /* border-radius: 20px 0 0 20px; */
+    margin: 5px -5px 5px 5px;
+    color: #e1e1e1;
     /* background-color: rgba(39, 42, 52, 0); */
 }
