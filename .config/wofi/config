@@ -1,0 +1,6 @@
+allow_images=true
+hide_scroll=false
+no_actions=true
+term=kitty
+mode=drun
+--show
