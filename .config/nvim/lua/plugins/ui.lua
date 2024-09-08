@@ -1,12 +1,12 @@
 return {
-    -- {
-    --     "nvimdev/dashboard-nvim",
-    --     enabled = true,
-    -- },
-    -- {
-    --     "nvim-lualine/lualine.nvim",
-    --     enabled = true,
-    -- },
+    {
+        "nvimdev/dashboard-nvim",
+        enabled = false,
+    },
+    {
+        "nvim-lualine/lualine.nvim",
+        enabled = false,
+    },
 
     -- neo-tree to disable it on nvim . (there's probably better ways to do this)
     {
