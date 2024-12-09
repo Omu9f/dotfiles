@@ -10,11 +10,11 @@ if [ ! -d "$SOURCE" ]; then
     exit 1
 fi
 
-# Clear out the destination directory
-rm -rf "$DESTINATION/"*
-
 # Ensure the destination directory exists
 mkdir -p "$DESTINATION"
+
+# Clear out the destination directory
+rm -rf "$DESTINATION/"*
 
 # Copy contents from source to destination
 cp -r "$SOURCE/"* "$DESTINATION/"

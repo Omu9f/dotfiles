@@ -19,6 +19,9 @@ fi
 # Ensure the destination directory exists
 mkdir -p "$DESTINATION"
 
+# Clear out the destination directory
+rm -rf "$DESTINATION/"*
+
 # Copy files to the destination directory
 cp "$TMUX_CONF" "$DESTINATION/"
 cp "$SESSIONIZER_SCRIPT" "$DESTINATION/"

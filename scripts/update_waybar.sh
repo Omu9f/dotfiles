@@ -13,6 +13,9 @@ fi
 # Ensure the destination directory exists
 mkdir -p "$DESTINATION"
 
+# Clear out the destination directory
+rm -rf "$DESTINATION/"*
+
 # Copy contents from source to destination
 cp -r "$SOURCE/"* "$DESTINATION/"
 
