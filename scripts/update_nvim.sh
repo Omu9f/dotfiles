@@ -10,6 +10,9 @@ if [ ! -d "$SOURCE" ]; then
     exit 1
 fi
 
+# Clear out the destination directory
+rm -rf "$DESTINATION/"*
+
 # Ensure the destination directory exists
 mkdir -p "$DESTINATION"
 
