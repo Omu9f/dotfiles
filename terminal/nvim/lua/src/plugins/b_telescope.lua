@@ -1,4 +1,4 @@
--- telescope for fuzzy finding files, strings, and other actions
+-- telescope for fuzzy finding files, strings, etc
 return {
   {
     "nvim-telescope/telescope.nvim",
