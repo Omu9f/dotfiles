@@ -1,8 +1,6 @@
-local opts = { noremap = true, silent = true }
-
 vim.g.mapleader = " "
 
-vim.opt.guicursor = "" -- fat insert cursor
+vim.opt.guicursor = ""        -- fat insert cursor
 
 vim.opt.number = true         -- show line number
 vim.opt.relativenumber = true -- use relative line number

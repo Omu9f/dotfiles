@@ -1,13 +1,10 @@
 -- new lsp attempt
 local M = {
-  "neovim/nvim-lspconfig", -- Specify the plugin repository
+  "neovim/nvim-lspconfig",
   dependencies = {
-    -- manage language servers
+    "stevearc/conform.nvim",
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
-    -- manage formatting
-    "stevearc/conform.nvim",
-    -- manage completion and snippets
     "hrsh7th/cmp-nvim-lsp",
     "hrsh7th/cmp-buffer",
     "hrsh7th/cmp-path",
@@ -15,12 +12,15 @@ local M = {
     "hrsh7th/nvim-cmp",
     "L3MON4D3/LuaSnip",
     "saadparwaiz1/cmp_luasnip",
+    "j-hui/fidget.nvim",
   },
 
   config = function()
-    local lspconfig = require("lspconfig")
-
-    -- lsp stuff here
+    require("conform").setup({
+      formatters_by_ft = {
+      }
+    })
+    local cmp = require('cmp')
     local cmp_lsp = require("cmp_nvim_lsp")
     local capabilities = vim.tbl_deep_extend(
       "force",
@@ -29,7 +29,7 @@ local M = {
       cmp_lsp.default_capabilities()
     )
 
-    -- mason for installing language servers
+    require("fidget").setup({})
     require("mason").setup()
     require("mason-lspconfig").setup({
       ensure_installed = {
@@ -43,31 +43,26 @@ local M = {
             capabilities = capabilities
           }
         end,
+
+        ["lua_ls"] = function()
+          local lspconfig = require("lspconfig")
+          lspconfig.lua_ls.setup {
+            capabilities = capabilities,
+            settings = {
+              Lua = {
+                runtime = { version = "Lua 5.1" },
+                diagnostics = {
+                  globals = { "bit", "vim", "it", "describe", "before_each", "after_each" },
+                }
+              }
+            }
+          }
+        end,
       }
     })
 
-    -- confrom for formatting
-    local conform = require("conform")
-    conform.setup({
-      formatters_by_ft = {
-        lua = { "stylua" },
-        rust = { "rustfmt" },
-        go = { "gofmt" },
-        javascript = { "prettier" },
-        python = { "black" },
-      },
-    })
-    -- format on save
-    vim.api.nvim_create_autocmd("BufWritePre", {
-      pattern = "*",
-      callback = function(args)
-        conform.format({ bufnr = args.buf })
-      end,
-    })
-
-    -- cmp for code completion
-    local cmp = require('cmp')
     local cmp_select = { behavior = cmp.SelectBehavior.Select }
+
     cmp.setup({
       snippet = {
         expand = function(args)
@@ -75,24 +70,32 @@ local M = {
         end,
       },
       mapping = cmp.mapping.preset.insert({
-        ['<A-h>'] = cmp.mapping.select_prev_item(cmp_select),
-        ['<A-t>'] = cmp.mapping.confirm({ select = true }),
-        ['<A-n>'] = cmp.mapping.select_next_item(cmp_select),
+        ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
+        ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
+        ['<C-y>'] = cmp.mapping.confirm({ select = true }),
         ["<C-Space>"] = cmp.mapping.complete(),
       }),
       sources = cmp.config.sources({
         { name = 'nvim_lsp' },
         { name = 'luasnip' }, -- For luasnip users.
       }, {
-        -- { name = 'buffer' },
-        {
-          name = 'buffer',
-          keyword_length = 5,
-          option = { get_bufnrs = function() return { vim.api.nvim_get_current_buf() } end }
-        }
+        { name = 'buffer' },
       })
     })
-  end,
+
+    vim.diagnostic.config({
+      -- update_in_insert = true,
+      float = {
+        focusable = false,
+        style = "minimal",
+        border = "rounded",
+        source = "always",
+        header = "",
+        prefix = "",
+      },
+    })
+  end
 }
 
-return M
+-- return M
+return {}
