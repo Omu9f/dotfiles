@@ -1,12 +1,11 @@
 #!/bin/bash
 
-# Define source and destination paths
-SOURCE="$HOME/codespace/superdev/hyprland-utils"
-DESTINATION="../custom/hyprland-utils"
+# Define source files and destination paths
+DVROAK_SCRIPT="$HOME/.local/bin/tmux-sessionizer"
+DESTINATION="../custom/hypr-utils"
 
-# Check if the source directory exists
-if [ ! -d "$SOURCE" ]; then
-    echo "Source directory $SOURCE does not exist. Exiting."
+if [ ! -f "$DVROAK_SCRIPT" ]; then
+    echo "Tmux sessionizer script $DVROAK_SCRIPT does not exist. Exiting."
     exit 1
 fi
 
@@ -16,8 +15,8 @@ mkdir -p "$DESTINATION"
 # Clear out the destination directory
 rm -rf "$DESTINATION/"*
 
-# Copy contents from source to destination
-cp -r "$SOURCE/"* "$DESTINATION/"
+# Copy files to the destination directory
+cp "$DVROAK_SCRIPT" "$DESTINATION/"
 
 # Provide feedback
-echo "Contents of $SOURCE have been copied to $DESTINATION."
+echo "Hypr utils files have been copied to $DESTINATION."

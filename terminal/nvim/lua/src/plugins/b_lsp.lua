@@ -22,12 +22,8 @@ local M = {
 
     -- lsp stuff here
     local cmp_lsp = require("cmp_nvim_lsp")
-    local capabilities = vim.tbl_deep_extend(
-      "force",
-      {},
-      vim.lsp.protocol.make_client_capabilities(),
-      cmp_lsp.default_capabilities()
-    )
+    local capabilities =
+      vim.tbl_deep_extend("force", {}, vim.lsp.protocol.make_client_capabilities(), cmp_lsp.default_capabilities())
 
     -- mason for installing language servers
     require("mason").setup()
@@ -36,14 +32,15 @@ local M = {
         "lua_ls",
         "rust_analyzer",
         "gopls",
+        "pyright",
       },
       handlers = {
         function(server_name) -- default handler (optional)
-          require("lspconfig")[server_name].setup {
-            capabilities = capabilities
-          }
+          require("lspconfig")[server_name].setup({
+            capabilities = capabilities,
+          })
         end,
-      }
+      },
     })
 
     -- confrom for formatting
@@ -54,7 +51,7 @@ local M = {
         rust = { "rustfmt" },
         go = { "gofmt" },
         javascript = { "prettier" },
-        python = { "black" },
+        python = { "black", "isort" },
       },
     })
     -- format on save
@@ -66,31 +63,35 @@ local M = {
     })
 
     -- cmp for code completion
-    local cmp = require('cmp')
+    local cmp = require("cmp")
     local cmp_select = { behavior = cmp.SelectBehavior.Select }
     cmp.setup({
       snippet = {
         expand = function(args)
-          require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
+          require("luasnip").lsp_expand(args.body) -- For `luasnip` users.
         end,
       },
       mapping = cmp.mapping.preset.insert({
-        ['<A-h>'] = cmp.mapping.select_prev_item(cmp_select),
-        ['<A-t>'] = cmp.mapping.confirm({ select = true }),
-        ['<A-n>'] = cmp.mapping.select_next_item(cmp_select),
+        ["<A-h>"] = cmp.mapping.select_prev_item(cmp_select),
+        ["<A-t>"] = cmp.mapping.confirm({ select = true }),
+        ["<A-n>"] = cmp.mapping.select_next_item(cmp_select),
         ["<C-Space>"] = cmp.mapping.complete(),
       }),
       sources = cmp.config.sources({
-        { name = 'nvim_lsp' },
-        { name = 'luasnip' }, -- For luasnip users.
+        { name = "nvim_lsp" },
+        { name = "luasnip" }, -- For luasnip users.
       }, {
         -- { name = 'buffer' },
         {
-          name = 'buffer',
+          name = "buffer",
           keyword_length = 5,
-          option = { get_bufnrs = function() return { vim.api.nvim_get_current_buf() } end }
-        }
-      })
+          option = {
+            get_bufnrs = function()
+              return { vim.api.nvim_get_current_buf() }
+            end,
+          },
+        },
+      }),
     })
   end,
 }
