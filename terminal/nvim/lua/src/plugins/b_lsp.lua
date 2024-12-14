@@ -18,7 +18,7 @@ local M = {
   },
 
   config = function()
-    local lspconfig = require("lspconfig")
+    -- local lspconfig = require("lspconfig") -- if you need it
 
     -- lsp stuff here
     local cmp_lsp = require("cmp_nvim_lsp")
@@ -33,6 +33,7 @@ local M = {
         "rust_analyzer",
         "gopls",
         "pyright",
+        "ts_ls",
       },
       handlers = {
         function(server_name) -- default handler (optional)
@@ -51,6 +52,7 @@ local M = {
         rust = { "rustfmt" },
         go = { "gofmt" },
         javascript = { "prettier" },
+        typescript = { "prettier" },
         python = { "black", "isort" },
       },
     })
