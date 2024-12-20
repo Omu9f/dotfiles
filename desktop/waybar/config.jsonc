@@ -26,7 +26,7 @@
   "clock": {
     "format": "{:%b %d   %I:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format-alt": "{:%a %b %d %Y   %I:%M %p}",
+    "format-alt": "{:%a %b %d %Y   %I:%M:%S %p}",
     "interval": 1,
   },
   "window": {

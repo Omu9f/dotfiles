@@ -14,18 +14,18 @@ window #input {
   padding: 10px;
   border-radius: 10px;
   border: none;
-  background-color: rgba(32, 32, 32, 0.85);
+  background-color: #181825;
   color: white;
 }
 
 #inner-box {
-  background-color: rgba(32, 32, 32, 0.85);
+  background-color: #181825;
 }
 
 #outer-box {
   margin: 2px;
   /* padding: 10px; */
-  background-color: rgba(32, 32, 32, 0.85);
+  background-color: #181825;
   border-radius: 10px;
   border: 10px;
   border-color: #e1e1e1;
@@ -44,7 +44,7 @@ window #input {
 #text:selected {
   margin-left: 20px;
   /* padding: 4px; */
-  color: black;
+  color: white;
 }
 
 /* #entry:nth-child(even) {
@@ -53,19 +53,19 @@ window #input {
 
 #entry {
   padding: 4px;
-  background-color: rgba(32, 32, 32, 0.85);
+  background-color: #181825;
 }
 
 #entry:selected {
   /* background-color: #6dd7ff; */
-  background-color: #ea6398;
-  color: black;
+  background-color: #313244;
+  /* c10 */
   /* padding: 12px; */
   border-radius: 6px;
   border: 10px;
   border-color: #e1e1e1;
 }
 
-#text:selected {
+/* #text:selected {
   background: transparent;
-}
+} */
