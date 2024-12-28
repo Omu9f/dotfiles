@@ -24,7 +24,7 @@ button:hover {
   padding: 0 5px;
   margin: 5px 0px 5px 0px;
   background-color: transparent;
-  color: #696969;
+  color: #545c7e;
   border-radius: 20px;
 }
 
@@ -34,14 +34,13 @@ button:hover {
 
 #workspaces button.active {
   /* background-color: #6c9fff; */
-  color: #e1e1e1;
+  color: #ff9e64;
 }
 
 #workspaces button.urgent {
   background-color: #eb4d4b;
 }
 
-#clock,
 #battery,
 #cpu,
 #memory,
@@ -55,8 +54,14 @@ button:hover {
 /* #custom-power, */
 #bluetooth {
   padding: 0px 10px;
-  color: #e1e1e1;
+  /* color: #e1e1e1; */
+  color: #41a6b5;
   /* background-color: rgba(35, 35, 35, 0.7); */
+}
+
+#clock {
+  color: #bb9af7;
+  padding: 0px 10px 0px 0px;
 }
 
 #workspaces {

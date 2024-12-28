@@ -3,7 +3,7 @@ local extras = {
     dir = "~/codespace/superdev/ninetails",
     config = function()
       require("ninetails").setup()
-    end
+    end,
   },
   {
     "supermaven-inc/supermaven-nvim",

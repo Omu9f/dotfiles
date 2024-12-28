@@ -55,6 +55,17 @@ local M = {
         typescript = { "prettier" },
         python = { "black", "isort" },
       },
+      formatters = {
+        stylua = {
+          args = {
+            "--indent-type",
+            "Spaces", -- Specify space-based indentation
+            "--indent-width",
+            "2", -- Set the width to 2 spaces
+            "-", -- Read from stdin
+          },
+        },
+      },
     })
     -- format on save
     vim.api.nvim_create_autocmd("BufWritePre", {
@@ -74,10 +85,10 @@ local M = {
         end,
       },
       mapping = cmp.mapping.preset.insert({
-        ["<A-h>"] = cmp.mapping.select_prev_item(cmp_select),
-        ["<A-t>"] = cmp.mapping.confirm({ select = true }),
-        ["<A-n>"] = cmp.mapping.select_next_item(cmp_select),
-        ["<C-Space>"] = cmp.mapping.complete(),
+        ["<leader>j"] = cmp.mapping.select_prev_item(cmp_select),
+        ["<leader>k"] = cmp.mapping.confirm({ select = true }),
+        ["<leader>l"] = cmp.mapping.select_next_item(cmp_select),
+        ["<leader><leader>"] = cmp.mapping.complete(),
       }),
       sources = cmp.config.sources({
         { name = "nvim_lsp" },

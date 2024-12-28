@@ -1,8 +1,8 @@
 vim.g.mapleader = " "
 
-vim.opt.guicursor = "" -- fat insert cursor
+vim.opt.guicursor = ""        -- fat insert cursor
 
-vim.opt.number = true -- show line number
+vim.opt.number = true         -- show line number
 vim.opt.relativenumber = true -- use relative line number
 
 vim.opt.cul = true
@@ -15,5 +15,5 @@ vim.opt.wrap = false
 vim.opt.scrolloff = 8
 
 vim.opt.swapfile = false
-vim.opt.timeoutlen = 200 -- timeout for keybinds
+vim.opt.timeoutlen = 300 -- timeout for keybinds
 -- vim.opt.ttimeoutlen = 500
