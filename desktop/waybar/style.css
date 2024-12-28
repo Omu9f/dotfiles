@@ -25,7 +25,7 @@ button:hover {
   margin: 5px 0px 5px 0px;
   background-color: transparent;
   color: #545c7e;
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 
 #workspaces button:hover {
@@ -33,8 +33,8 @@ button:hover {
 }
 
 #workspaces button.active {
-  /* background-color: #6c9fff; */
-  color: #ff9e64;
+  background-color: #7aa2f7;
+  color: #24283b;
 }
 
 #workspaces button.urgent {
@@ -60,7 +60,7 @@ button:hover {
 }
 
 #clock {
-  color: #bb9af7;
+  color: #ff9e64;
   padding: 0px 10px 0px 0px;
 }
 
