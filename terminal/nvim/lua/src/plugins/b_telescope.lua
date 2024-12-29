@@ -16,10 +16,10 @@ return {
       })
 
       local builtin = require("telescope.builtin")
-      vim.keymap.set("n", "<A-p>", builtin.find_files, {})                -- search for file names
-      vim.keymap.set("n", "<A-f>", builtin.current_buffer_fuzzy_find, {}) -- search string across current file (buffer)
-      vim.keymap.set("n", "<A-g>", builtin.live_grep, {})                 -- search string across project files
-      vim.keymap.set("n", "<A-b>", function()
+      vim.keymap.set("n", "<C-p>", builtin.find_files, {}) -- search for file names
+      vim.keymap.set("n", "<C-f>", builtin.current_buffer_fuzzy_find, {}) -- search string across current file (buffer)
+      vim.keymap.set("n", "<C-g>", builtin.live_grep, {}) -- search string across project files
+      vim.keymap.set("n", "<C-b>", function()
         require("telescope.builtin").buffers({ sort_lastused = true })
       end) -- list open buffers
       -- for more actions, use ':help telescope' in nvim
