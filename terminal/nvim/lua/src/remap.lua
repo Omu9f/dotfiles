@@ -9,10 +9,6 @@ vim.keymap.set({ "n", "v" }, "<A-h>", "9h", opts) -- move down 9 lines
 vim.keymap.set({ "n", "v" }, "<A-l>", "9l", opts) -- move up 9 lines
 
 -- MODIFY
-vim.keymap.set("v", "<leader>x", [["+ydd]]) -- cut selection to sys clipboard
-vim.keymap.set("v", "<leader>y", [["+y]]) -- copy to sys clipboard (prime + asbjornHaland)
-vim.keymap.set("n", "<leader>p", '"+pe') -- paste from system clipboard
-
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv") -- move selected code in v (down)
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- move selected code in v (up)
 

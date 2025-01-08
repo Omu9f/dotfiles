@@ -1,12 +1,12 @@
 -- theme for aesthetics
 return {
   {
-    "omu9f/memento.nvim",
+    dir = "~/codespace/superdev/memento.nvim",
     priority = 1000,
     config = function()
       require("memento").setup({
-        style = "night",        -- The theme comes in three styles, `storm`, `moon`, a darker variant `night` and `day`
-        transparent = true,     -- Enable this to disable setting the background color
+        style = "night", -- The theme comes in three styles, `storm`, `moon`, a darker variant `night` and `day`
+        transparent = true, -- Enable this to disable setting the background color
         terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
         styles = {
           -- Style to be applied to different syntax groups
@@ -15,33 +15,11 @@ return {
           keywords = { italic = false },
           -- Background styles. Can be "dark", "transparent" or "normal"
           sidebars = "transparent", -- style for sidebars, see below
-          floats = "transparent",   -- style for floating windows
+          floats = "transparent", -- style for floating windows
         },
       })
       -- set the colorscheme
       vim.cmd.colorscheme("memento")
-    end,
-  },
-  {
-    "folke/tokyonight.nvim",
-    priority = 1000,
-    config = function()
-      require("tokyonight").setup({
-        style = "night",        -- The theme comes in three styles, `storm`, `moon`, a darker variant `night` and `day`
-        transparent = true,     -- Enable this to disable setting the background color
-        terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
-        styles = {
-          -- Style to be applied to different syntax groups
-          -- Value is any valid attr-list value for `:help nvim_set_hl`
-          comments = { italic = false },
-          keywords = { italic = false },
-          -- Background styles. Can be "dark", "transparent" or "normal"
-          sidebars = "transparent", -- style for sidebars, see below
-          floats = "transparent",   -- style for floating windows
-        },
-      })
-      -- set the colorscheme
-      -- vim.cmd.colorscheme("tokyonight")
     end,
   },
   {
