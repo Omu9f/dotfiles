@@ -2,6 +2,9 @@ vim.g.mapleader = " "
 
 vim.opt.guicursor = "" -- fat insert cursor
 
+-- vim.opt.laststatus = 0
+vim.opt.termguicolors = true
+
 vim.opt.number = true -- show line number
 vim.opt.relativenumber = true -- use relative line number
 
@@ -18,4 +21,4 @@ vim.opt.swapfile = false
 vim.opt.timeoutlen = 300 -- timeout for keybinds
 -- vim.opt.ttimeoutlen = 500
 
-vim.opt.clipboard:append("unnamedplus") -- always use system clipboard???
+vim.opt.clipboard:append("unnamedplus") -- always use system clipboard

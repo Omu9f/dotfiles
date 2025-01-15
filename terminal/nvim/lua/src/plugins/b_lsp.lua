@@ -53,6 +53,8 @@ local M = {
         go = { "gofmt" },
         javascript = { "prettier" },
         typescript = { "prettier" },
+        javascriptreact = { "prettier" },
+        typescriptreact = { "prettier" },
         python = { "black", "isort" },
       },
       formatters = {
@@ -85,9 +87,9 @@ local M = {
         end,
       },
       mapping = cmp.mapping.preset.insert({
-        ["<C-q>"] = cmp.mapping.select_prev_item(cmp_select),
-        ["<C-w>"] = cmp.mapping.select_next_item(cmp_select),
-        ["<C-s>"] = cmp.mapping.confirm({ select = true }),
+        ["<A-w>"] = cmp.mapping.select_prev_item(cmp_select),
+        ["<A-e>"] = cmp.mapping.select_next_item(cmp_select),
+        ["<A-s>"] = cmp.mapping.confirm({ select = true }),
         ["<leader><leader>"] = cmp.mapping.complete(),
       }),
       sources = cmp.config.sources({

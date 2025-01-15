@@ -6,7 +6,7 @@ if not vim.loop.fs_stat(lazypath) then
     "clone",
     "--filter=blob:none",
     "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable",     -- latest stable release
+    "--branch=stable", -- latest stable release
     lazypath,
   })
 end
@@ -20,7 +20,7 @@ require("lazy").setup({
   -- automatically check for plugin updates
   checker = { enabled = true },
   change_detection = {
-    enabled = true,     -- automatically detect changes in your config and notify
-    notify = false,     -- don't show the popup
+    enabled = true, -- automatically detect changes in your config and notify
+    notify = false, -- don't show the popup
   },
 })

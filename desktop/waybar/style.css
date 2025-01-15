@@ -1,5 +1,5 @@
 * {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "JetBrains Mono", sans-serif;
   font-size: 14px;
   font-weight: 600;
 }
@@ -22,7 +22,8 @@ button:hover {
 
 #workspaces button {
   padding: 0 5px;
-  margin: 5px 0px 5px 0px;
+  /* margin: 5px 0px 5px 0px; */
+  margin: 0px 0px 0px 0px;
   background-color: transparent;
   color: #545c7e;
   /* border-radius: 20px; */
@@ -46,6 +47,8 @@ button:hover {
 #backlight,
 #network,
 #pulseaudio,
+#cpu,
+#memory,
 #custom-media,
 #tray,
 #window,
@@ -53,20 +56,22 @@ button:hover {
 #bluetooth {
   padding: 0px 10px;
   /* color: #e1e1e1; */
-  color: #ff9e64;
+  /* color: #ff9e64; */
+  color: #c9c9c9;
   /* background-color: rgba(35, 35, 35, 0.7); */
 }
 
 #clock {
-  color: #ea6398;
+  /* color: #ea6398; */
+  color: #c9c9c9;
   padding: 0px 10px 0px 0px;
 }
 
-#cpu,
-#memory {
-  color: #41a6b5;
-  padding: 0px 10px 0px 10px;
-}
+/* #cpu, */
+/* #memory { */
+/*   color: #41a6b5; */
+/*   padding: 0px 10px 0px 10px; */
+/* } */
 
 #workspaces {
   margin: 0px 5px 0px 5px;
