@@ -1,5 +1,5 @@
 * {
-  font-family: "Roboto", monospace;
+  font-family: "JetBrains Mono", monospace;
 }
 
 window {
@@ -58,7 +58,8 @@ window #input {
 
 #entry:selected {
   /* background-color: #6dd7ff; */
-  background-color: #313244;
+  /* background-color: #313244; */
+  background-color: #3d59a1;
   /* c10 */
   /* padding: 12px; */
   border-radius: 6px;
