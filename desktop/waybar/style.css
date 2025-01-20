@@ -137,7 +137,7 @@ button:hover {
 
 #backlight {
   /* background-color: rgba(39, 42, 52, 0); */
-  margin: 0px -10px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
 
 #tray {
@@ -173,9 +173,9 @@ button:hover {
 
 #bluetooth {
   /* border-radius: 20px 0 0 20px; */
-  margin: 0px -5px 0px 0px;
-  /* color: #4572ff; */
-  color: transparent;
+  margin: 0px 0px 0px 0px;
+  color: #4572ff;
+  /* color: transparent; */
   /* background-color: rgba(39, 42, 52, 0); */
 }
 
@@ -184,4 +184,8 @@ button:hover {
   margin: 5px -5px 5px 5px;
   color: #e1e1e1;
   /* background-color: rgba(39, 42, 52, 0); */
+}
+
+#custom-divider {
+  color: #545c7e;
 }
