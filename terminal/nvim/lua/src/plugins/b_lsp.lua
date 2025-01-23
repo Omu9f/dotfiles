@@ -56,6 +56,8 @@ local M = {
         javascriptreact = { "prettier" },
         typescriptreact = { "prettier" },
         python = { "black", "isort" },
+        c = { "clang-format" },
+        swift = { "swift-format" },
       },
       formatters = {
         stylua = {

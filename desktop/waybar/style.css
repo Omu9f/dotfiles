@@ -21,7 +21,7 @@ button:hover {
 }
 
 #workspaces button {
-  padding: 0 5px;
+  padding: 0 2px;
   /* margin: 5px 0px 5px 0px; */
   margin: 0px 0px 0px 0px;
   background-color: transparent;
@@ -117,8 +117,8 @@ button:hover {
 
 #pulseaudio {
   border-radius: 0 0 0 0;
-  margin: 0px -15px 0px 0px;
-  /* background-color: rgba(39, 42, 52, 0); */
+  /* margin: 0px -15px 0px 0px; */
+  margin: 0px 0px 0px 0px;
 }
 
 #pulseaudio.muted {
@@ -126,17 +126,15 @@ button:hover {
 }
 
 #network {
-  /* background-color: rgba(39, 42, 52, 0); */
   margin: 0px 0px 0px 0px;
   /* color: #3e42ff; */
 }
 
-#network.disconnected {
-  color: red;
-}
+/* #network.disconnected { */
+/*   color: red; */
+/* } */
 
 #backlight {
-  /* background-color: rgba(39, 42, 52, 0); */
   margin: 0px 0px 0px 0px;
 }
 
@@ -174,15 +172,15 @@ button:hover {
 #bluetooth {
   /* border-radius: 20px 0 0 20px; */
   margin: 0px 0px 0px 0px;
-  color: #4572ff;
+  color: #e1e1e1;
   /* color: transparent; */
   /* background-color: rgba(39, 42, 52, 0); */
 }
 
 #bluetooth.connected {
   /* border-radius: 20px 0 0 20px; */
-  margin: 5px -5px 5px 5px;
-  color: #e1e1e1;
+  margin: 0px 0px 0px 0px;
+  color: #4572ff;
   /* background-color: rgba(39, 42, 52, 0); */
 }
 

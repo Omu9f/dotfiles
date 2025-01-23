@@ -3,10 +3,10 @@ local opts = { noremap = true, silent = true }
 -- NAVIGATION
 vim.keymap.set("n", "<C-d>", "<C-d>zz") -- move down half page + cursor position fixed
 vim.keymap.set("n", "<C-u>", "<C-u>zz") -- move up half page + cursor position fixed
--- vim.keymap.set({ "n", "v" }, "<A-j>", "9j", opts) -- move down 9 lines
--- vim.keymap.set({ "n", "v" }, "<A-k>", "9k", opts) -- move up 9 lines
--- vim.keymap.set({ "n", "v" }, "<A-h>", "9h", opts) -- move down 9 lines
--- vim.keymap.set({ "n", "v" }, "<A-l>", "9l", opts) -- move up 9 lines
+vim.keymap.set({ "n", "v" }, "<A-j>", "9j", opts) -- move down 9 lines
+vim.keymap.set({ "n", "v" }, "<A-k>", "9k", opts) -- move up 9 lines
+vim.keymap.set({ "n", "v" }, "<A-h>", "9h", opts) -- move down 9 lines
+vim.keymap.set({ "n", "v" }, "<A-l>", "9l", opts) -- move up 9 lines
 
 -- MODIFY
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv") -- move selected code in v (down)
