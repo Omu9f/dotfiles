@@ -20,7 +20,8 @@ vim.keymap.set("n", "s", ":w<CR>") -- save file
 vim.keymap.set({ "i", "v" }, "C-c", "<esc>", opts) -- esc
 vim.keymap.set({ "n", "v" }, "<leader>w", ":q<CR>", opts) -- quit
 vim.keymap.set({ "n", "v" }, "<leader>q", ":q!<CR>", opts) -- quit all
-vim.keymap.set("n", "<leader>e", ":Ex<CR>", opts) -- open netrw
+-- vim.keymap.set("n", "<leader>e", ":Ex<CR>", opts) -- open netrw
+vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>", opts) -- open netrw
 
 vim.keymap.set("n", "<leader>u", ":Lazy update<CR>", opts) -- lazy update
 -- replace word cursor is on (prime)
