@@ -115,6 +115,14 @@ button:hover {
   /* background-color: rgba(39, 42, 52, 0); */
 }
 
+#battery.warning {
+  color: orange;
+}
+
+#battery.critical {
+  color: red;
+}
+
 #pulseaudio {
   border-radius: 0 0 0 0;
   /* margin: 0px -15px 0px 0px; */

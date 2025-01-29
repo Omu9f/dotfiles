@@ -23,8 +23,8 @@
     "pulseaudio",
     "custom/divider",
     "battery",
-    "custom/divider",
-    "memory",
+    // "custom/divider",
+    // "memory",
     "custom/divider",
     "clock",
   ],
@@ -53,7 +53,7 @@
   },
   "memory": {
     "interval": 1,
-    "format": "{used:0.1f} GiB | {avail:0.1f} GiB",
+    "format": "{used:0.1f} GiB | {avail:0.1f} GiB | {swapAvail:0.1f} GiB",
     // "format-alt": "󰾆  {percentage}%",
     "max-length": 40,
     "tooltip": false,
@@ -70,7 +70,7 @@
     "format-icons": ["", "", "", "", "", "", "", "", ""],
   },
   "battery": {
-    "interval": 1,
+    "interval": 30,
     // "format-alt": "<span font='14'>{icon}</span>  ",
     // "format": "<span font='14'>{icon}</span> {capacity}%",
     "format": "BAT {capacity}%",
@@ -78,6 +78,10 @@
     "format-charging": "<span font='14'></span> {capacity}%",
     "format-plugged": "<span font='14'></span> ",
     "format-icons": ["󰁺", "󰁼", "󰁾", "󰂀", "󰂂"],
+    "states": {
+      "warning": 50,
+      "critical": 40
+    },
   },
   "network": {
     "format": "<span font='10'>{icon}</span>" ,
