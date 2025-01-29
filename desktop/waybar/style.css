@@ -57,13 +57,15 @@ button:hover {
   padding: 0px 10px;
   /* color: #e1e1e1; */
   /* color: #ff9e64; */
-  color: #c9c9c9;
+  /* color: #c9c9c9; */
+  color: #c0caf5;
   /* background-color: rgba(35, 35, 35, 0.7); */
 }
 
 #clock {
   /* color: #ea6398; */
-  color: #c9c9c9;
+  /* color: #c9c9c9; */
+  color: #c0caf5;
   padding: 0px 10px 0px 0px;
 }
 
@@ -180,7 +182,6 @@ button:hover {
 #bluetooth {
   /* border-radius: 20px 0 0 20px; */
   margin: 0px 0px 0px 0px;
-  color: #e1e1e1;
   /* color: transparent; */
   /* background-color: rgba(39, 42, 52, 0); */
 }
