@@ -1,6 +1,6 @@
 {
-  "layer": "bottom",
-  "position": "bottom",
+  "layer": "top",
+  "position": "top",
   "height": 24,
   "spacing": 0,
   "modules-left": [
@@ -8,18 +8,18 @@
     "cpu",
     "memory",
   ],
-  // "modules-center": [
-  //   "clock",
-  // ],
+  "modules-center": [
+    "clock",
+  ],
   "modules-right": [
     "tray",
     "bluetooth",
     "network",
     "pulseaudio",
     "battery",
+    // "custom/space",
+    // "clock",
     "backlight",
-    "custom/space",
-    "clock",
   ],
   "tray": {
     "icon-size": 12,

@@ -5,9 +5,11 @@
 }
 
 window#waybar {
-  /* background-color: rgba(13, 14, 15, 0.9); */
-  background-color: rgba(19, 22, 33, 0.95);
+  background-color: rgba(13, 14, 15, 0.9);
+  /* background-color: rgba(19, 22, 33, 0.95); */
   /* background-color: #131621; */
+  
+  /* background-color: #c8c8c8; */
   color: #c4c4c4;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -25,7 +27,7 @@ button:hover {
 #workspaces button {
   padding: 0 2px;
   /* margin: 5px 0px 5px 0px; */
-  margin: 0px 0px 0px 0px;
+  /* margin: 2px 0px 2px 0px; */
   background-color: transparent;
   color: #545c7e;
   /* border-radius: 20px; */
@@ -36,8 +38,12 @@ button:hover {
 }
 
 #workspaces button.active {
+  /* background-color: #3d59a1; */
   background-color: #3d59a1;
   color: #f1f1f1;
+  
+  border-radius: 5px;
+  padding: 0 5px;
 }
 
 #workspaces button.urgent {
@@ -51,6 +57,7 @@ button:hover {
 #pulseaudio,
 #cpu,
 #memory,
+#clock,
 #custom-media,
 #tray,
 #window,
@@ -60,14 +67,16 @@ button:hover {
   /* color: #e1e1e1; */
   /* color: #ff9e64; */
   /* color: #c9c9c9; */
+
   color: #c0caf5;
-  /* background-color: rgba(35, 35, 35, 0.7); */
+  /* color: #444; */
 }
 
 #clock {
   /* color: #ea6398; */
   /* color: #c9c9c9; */
-  color: #c0caf5;
+  
+  /* color: #c0caf5; */
   padding: 0px 10px 0px 0px;
 }
 
@@ -104,19 +113,18 @@ button:hover {
 #battery.charging {
   /* color: #0087ff; */
   /* color: #ea6398; */
-  color: #6dd7ff;
+  
+  /* color: #6dd7ff; */
+  color: #4fd6be;
 }
 
 #clock {
   border-radius: 20px;
   margin: 0px 5px 0px 5px;
-  /* background-color: rgba(39, 42, 52, 0); */
 }
 
 #battery {
-  /* border-radius: 0 20px 20px 0; */
   margin: 0px 0px 0px 0px;
-  /* background-color: rgba(39, 42, 52, 0); */
 }
 
 #battery.warning {
@@ -129,7 +137,6 @@ button:hover {
 
 #pulseaudio {
   border-radius: 0 0 0 0;
-  /* margin: 0px -15px 0px 0px; */
   margin: 0px 0px 0px 0px;
 }
 
@@ -151,27 +158,19 @@ button:hover {
 }
 
 #tray {
-  /* border-radius: 20px; */
   margin: 0 5px;
 }
 
 #cpu {
-  /* border-radius: 20px 0 0 20px; */
   margin: 0px 0px 0px 5px;
-  /* background-color: rgba(39, 42, 52, 0); */
 }
 
 #memory {
-  /* margin: 5px 0px 5px 0px; */
-  /* border-radius: 0 20px 20px 0; */
   margin: 0px 0px 0px 0px;
-  /* background-color: rgba(39, 42, 52, 0); */
 }
 
 #temperature {
-  /* border-radius: 0 20px 20px 0; */
   margin: 0px 0px 0px 0px;
-  /* background-color: rgba(39, 42, 52, 0); */
 }
 
 #custom-logo {
@@ -182,17 +181,12 @@ button:hover {
 }
 
 #bluetooth {
-  /* border-radius: 20px 0 0 20px; */
   margin: 0px 0px 0px 0px;
-  /* color: transparent; */
-  /* background-color: rgba(39, 42, 52, 0); */
 }
 
 #bluetooth.connected {
-  /* border-radius: 20px 0 0 20px; */
   margin: 0px 0px 0px 0px;
   color: #4572ff;
-  /* background-color: rgba(39, 42, 52, 0); */
 }
 
 #custom-divider {
