@@ -85,8 +85,8 @@
     // "format-icons": ["󰁺", "󰁼", "󰁾", "󰂀", "󰂂"],
     "format-icons": ["", "", "", "", ""],
     "states": {
-      "warning": 50,
-      "critical": 40
+      "warning": 55,
+      "critical": 45
     },
   },
   "network": {

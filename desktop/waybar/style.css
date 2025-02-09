@@ -25,12 +25,10 @@ button:hover {
 }
 
 #workspaces button {
-  padding: 0 2px;
-  /* margin: 5px 0px 5px 0px; */
-  /* margin: 2px 0px 2px 0px; */
+  padding: 0 2px 0 2px;
   background-color: transparent;
   color: #545c7e;
-  /* border-radius: 20px; */
+  border-radius: 5px;
 }
 
 #workspaces button:hover {
@@ -38,12 +36,11 @@ button:hover {
 }
 
 #workspaces button.active {
-  /* background-color: #3d59a1; */
   background-color: #3d59a1;
+  /* background-color: #ec3a80; */
   color: #f1f1f1;
   
-  border-radius: 5px;
-  padding: 0 5px;
+  /* padding: 0 5px; */
 }
 
 #workspaces button.urgent {
