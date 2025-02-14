@@ -9,8 +9,8 @@ window#waybar {
   /* background-color: rgba(19, 22, 33, 0.95); */
   /* background-color: #131621; */
   
-  /* background-color: #c8c8c8; */
-  color: #c4c4c4;
+  /* background-color: #d7e5fc; */
+  /* color: #c4c4c4; */
   transition-property: background-color;
   transition-duration: 0.5s;
 }
@@ -63,9 +63,9 @@ button:hover {
   padding: 0px 10px;
   /* color: #e1e1e1; */
   /* color: #ff9e64; */
-  /* color: #c9c9c9; */
+  color: #c9c9c9;
 
-  color: #c0caf5;
+  /* color: #c0caf5; */
   /* color: #444; */
 }
 

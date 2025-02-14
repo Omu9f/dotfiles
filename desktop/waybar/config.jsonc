@@ -5,21 +5,22 @@
   "spacing": 0,
   "modules-left": [
     "hyprland/workspaces",
-    "cpu",
-    "memory",
+    // "cpu",
+    // "memory",
+    "bluetooth",
   ],
-  "modules-center": [
+    "modules-center": [
     "clock",
   ],
   "modules-right": [
     "tray",
-    "bluetooth",
     "network",
     "pulseaudio",
-    "battery",
     // "custom/space",
     // "clock",
+    "battery",
     "backlight",
+    "hyprland/window",
   ],
   "tray": {
     "icon-size": 12,
@@ -33,9 +34,11 @@
     "interval": 1,
     "tooltip": false,
   },
-  "window": {
-    // "format": "{}",
-    "format": "{app_id}",
+  "hyprland/window": {
+    // "format": "{class}",
+    "format": "",
+    "icon": true,
+    "icon-size": 20,
     "tooltip": false, // Optional: show the window title as a tooltip
   },
   "cpu": {
@@ -65,7 +68,8 @@
     // "format-alt": "  {percent}%",
     // "format": " ",
     // "format": "  ",
-    "format": "  ",
+    "format": " ",
+    // "format": "  ",
     // "format": "  {percent}%",
     "format-icons": ["", "", "", "", "", "", "", "", ""],
     // "format-alt": "  {percent}%",
