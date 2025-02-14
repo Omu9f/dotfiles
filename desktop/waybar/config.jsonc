@@ -19,7 +19,7 @@
     // "custom/space",
     // "clock",
     "battery",
-    "backlight",
+    // "backlight",
     "hyprland/window",
   ],
   "tray": {
