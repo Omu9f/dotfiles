@@ -91,7 +91,7 @@ local M = {
       mapping = cmp.mapping.preset.insert({
         ["<A-w>"] = cmp.mapping.select_prev_item(cmp_select),
         ["<A-e>"] = cmp.mapping.select_next_item(cmp_select),
-        ["<A-s>"] = cmp.mapping.confirm({ select = true }),
+        ["<C-s>"] = cmp.mapping.confirm({ select = true }),
         ["<leader><leader>"] = cmp.mapping.complete(),
       }),
       sources = cmp.config.sources({

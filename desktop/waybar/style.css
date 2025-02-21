@@ -62,8 +62,9 @@ button:hover {
 #bluetooth {
   padding: 0px 10px;
   /* color: #e1e1e1; */
-  /* color: #ff9e64; */
-  color: #c9c9c9;
+  color: #fff;
+
+  /* color: #c9c9c9; */
 
   /* color: #c0caf5; */
   /* color: #444; */

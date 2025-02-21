@@ -5,22 +5,22 @@
   "spacing": 0,
   "modules-left": [
     "hyprland/workspaces",
-    // "cpu",
-    // "memory",
     "bluetooth",
   ],
-    "modules-center": [
+  "modules-center": [
+    // "cpu",
+    // "memory",
     "clock",
   ],
   "modules-right": [
     "tray",
+    "hyprland/window",
     "network",
     "pulseaudio",
     // "custom/space",
+    // "backlight",
     // "clock",
     "battery",
-    // "backlight",
-    "hyprland/window",
   ],
   "tray": {
     "icon-size": 12,
@@ -82,6 +82,7 @@
     // "format": "<span font='12'>{icon}</span> {capacity}%",
     "format-alt": " <span font='12'>{icon}</span>  {capacity}% ",
     "format": "<span font='12'>{icon}</span> ",
+    // "format": "<span font='14'>{icon}</span> ",
     // "format": "BAT {capacity}%",
     "format-full": "<span font='12'>{icon}</span> {capacity}%",
     "format-charging": "<span font='14'></span> {capacity}%",
@@ -103,13 +104,14 @@
   },
   "pulseaudio": {
     "format": "<span font='14'>{icon}</span>",
-    "format-alt": " <span font='14'>{icon}</span>  {volume}%",
+    "format-alt": " <span font='14'>{icon}</span> {volume}%",
     // "format": "VOL {volume}%",
     "format-muted": "<span font='14'>󰝟</span>",
     "format-source": "{volume}% ",
     "format-source-muted": "",
     "format-icons": {
       "default": ["󰖀", "󰕾"],
+      // "default": ["", "", ""],
     },
   },
   "bluetooth": {
